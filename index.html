@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+        
 </head>
 <body>
 <header class="header">
@@ -39,7 +40,7 @@
     <section class="hero">
         <div class="hero_box">
             <h1 class="hero_title">Эффективные решения для вашего бизнеса</h1>
-            <button class="hero_btn" type="button">Заказать услугу</button>
+            <button class="hero_btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
     </section>
     <section class="section features">
@@ -85,9 +86,9 @@
         <div class="container ">
             <h2 class="about_head">Чем мы занимаемся</h2>
             <ul class="about_list">
-                <li class="about_list_item"> <img src="img/img2.jpg" alt="" width="370px" height="294px"></li>
-                <li class="about_list_item"> <img src="img/img1.jpg" alt="" width="370px" height="294px"></li>
-                <li class="about_list_item"> <img src="img/img.jpg" alt="" width="370px" height="294px"></li>
+                <li class="about_list_item"> <img src="img/img2.jpg" alt="" width="370px" height="294px"><div class="about_box"><p class="text_about">Десктопные приложения</p></div></li>
+                <li class="about_list_item"> <img src="img/img1.jpg" alt="" width="370px" height="294px"><div class="about_box"><p class="text_about">Мобильные приложения</p></div></li>
+                <li class="about_list_item"> <img src="img/img.jpg" alt="" width="370px" height="294px"><div class="about_box"><p class="text_about">Дизайнерские решения</p></div></li>
 
             </ul>
         </div>
@@ -256,5 +257,11 @@
     </div>
 
 </footer>
+<div class="backdrop is-hidden" data-modal><div class="modal ">
+    <button  type="button" class="close-btn" data-modal-close><svg class="close_btn_modal"  width="11" height="11">
+        <use href="./symbol-defs.svg#icon-close"></use>
+    </svg></button>
+</div></div>
+<script src="js/modal.js"></script>
 </body>
 </html>
